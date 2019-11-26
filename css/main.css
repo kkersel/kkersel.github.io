@@ -171,7 +171,3 @@ nav  li  {
 	width: 1520px;
 	margin:  50px auto;
 }
-
-@media screen and (max-width: 1280px) { div.containerHead {width: 1200px;} }
-@media screen and (max-width: 1140px) { div.containerHead {width: 1024px;} }
-@media screen and (max-width: 992px) { div.containerHead {width: 970px;} }

@@ -8,7 +8,7 @@
 Login.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
-
+	<canvas id="canvas" ></canvas>
 <body class="wrapper"> <!для  media >
 	<section>
 	<div id="container" class="container"> 
@@ -40,8 +40,9 @@ Login.css">
 		</div>
 	</div>
 	</section>
-
 <script src="js/anime.min.js"></script>
+<script src="js/granim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script>
 	var cssSelector = anime ({
 		targets: '.container',
@@ -53,4 +54,26 @@ Login.css">
 	});
 </script>
 
+<script>
+var granimInstance = new Granim({
+    element: '#canvas',
+    direction: 'top-bottom',
+    isPausedWhenNotInView: true,
+    image : {
+        source: '../img/Background.jpg',
+        blendingMode: 'multiply'
+            },
+    states : {
+        "default-state": {
+            gradients: [
+                ['#29323c', '#485563'],
+                ['#FF6B6B', '#556270'],
+                ['#80d3fe', '#7ea0c4'],
+                ['#f0ab51', '#eceba3']
+            ],
+            transitionSpeed: 7000
+        }
+    }
+});
+</script>
 </body>

@@ -41,7 +41,7 @@ Login.css">
 					</form>	
 			</div>
 		<!--Форма  Регистрации-->
-		<div id="BlockReg">
+		<div id="BlockReg" class="BlockReg">
 			<div  class="BlockReg">
 
 				<h1>Регистрация</h1>
@@ -82,6 +82,7 @@ Login.css">
 
 					</form>>
 				</div>
+			</div>
 		</div>
 	</section>
 					 <!--JS-->	
@@ -99,12 +100,19 @@ Login.css">
 
 <script>
 	var cssSelector = anime ({
-		targets: '.blocklogin',
+		targets: '.container',
 		translateY: [-300, 0]
 	});
 	var cssSelector = anime ({
 		targets: '.button',
 		translateX: [100, 0]
+	});
+</script>
+
+<script>
+	var cssSelector = anime ({
+		targets: '#BlockReg'
+		translateY: [-300, 0]
 	});
 </script>
 

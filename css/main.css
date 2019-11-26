@@ -134,6 +134,15 @@ nav  li  {
  	right: 10px;
  	cursor: pointer;
   	font-size: 16px;
+  	outline: 0;
+	-moz-transition: background-color 0.8s 0.1s ease;
+	-o-transition: background-color 0.8s 0.1s ease;
+	-webkit-transition: background-color 0.8s 0.1s ease;
+}
+
+#box1:hover {
+background-color: #97CE68;
+color: #333;
 }
 
 .underContainer {

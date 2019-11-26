@@ -12,8 +12,8 @@ Login.css">
 <body>
 	<div class="wrapper">
 	<section>
-	<div class="container">
-		<div class="block">
+	<div id="container" class="container">
+		<div  class="block">
 			<h1>Вход</h1>
 			<form class="test">
 
@@ -31,7 +31,7 @@ Login.css">
 
 				<div class="inBlock">
 					<div class="shadow">
-						<button class="button">
+						<button id="button" class="button">
 						<img src="img/Icon/IcomLogin.png" class="buttonimg">
 						</button> <br />
 						<a href="#" class="inBlock">Регистрация</a>
@@ -42,4 +42,17 @@ Login.css">
 	</div>
 	</section>
 </div>
+
+<script src="js/anime.min.js"></script>
+<script>
+	var cssSelector = anime ({
+		targets: '.container',
+		translateY: [-300, 0]
+	});
+	var cssSelector = anime ({
+		targets: '.button',
+		translateX: [10, 0]
+	});
+</script>
+
 </body>

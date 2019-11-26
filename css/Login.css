@@ -1,0 +1,85 @@
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: url(../img/Background.jpg)
+	no-repeat center top /cover
+}
+
+div {
+	box-sizing: 
+	border-box;
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	font-size: 40px;
+}
+.hr {
+	border: 1px solid black;
+}
+.container {
+	width: 100%;
+    height: 100%;
+    position: fixed;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	overflow: auto;
+}
+
+.block {
+	width: 450px;
+	height: 460px;
+	background: #fff;
+	border-radius: 75px;
+}
+
+.inBlock {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	overflow: auto;
+	padding: 15px;
+	margin: 5px 0 0px 0;
+	font-size: 12px;
+}
+.border {
+	border-style: none;
+	height: 30px;
+	padding: 10px;
+}
+.image {
+	height: 30px;
+	margin-left: 10px;
+}
+.test {
+	padding: 0px 90px;
+}
+.button {
+	outline: 0;
+	margin-left: 2px;
+	height: 55px;
+	width: 160px;
+	border-radius: 50px;
+	border-style: ridge;
+	border-right-width: 1.5px;
+	border-left-width: 1.5px;
+	border-left-color: #656565;
+	border-bottom: none;
+	border-top: none;
+	border-right-color: #656565;
+	box-shadow: 0em 0.4em 5px rgba(122,122,122,0.5);
+    background: linear-gradient(to  left, #9900ff, #3366ff);
+}
+
+.buttonimg {
+	height: 30px;
+	width: 40px;
+}

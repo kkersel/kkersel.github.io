@@ -167,6 +167,10 @@ nav  li  {
 	margin: 0 auto;
 	text-align: center;
 }
+.wrapper {
+	width: 1520px;
+	margin:  50px auto;
+}
 
 @media screen and (max-width: 1280px) { div.containerHead {width: 1200px;} }
 @media screen and (max-width: 1140px) { div.containerHead {width: 1024px;} }

@@ -1,0 +1,3 @@
+@media only screen and (max-width: 1280px) { div.wrapper {width: 1200px;} }
+@media only screen and (max-width: 1140px) { div.wrapper{width: 1024px;} }
+@media only screen and (max-width: 992px) { div.wrapper {width: 970px;} }

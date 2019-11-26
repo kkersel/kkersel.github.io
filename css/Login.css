@@ -1,9 +1,11 @@
 
 body {
+	height: 100%;
+	width: 100%;
 	padding: 0;
 	margin: 0;
 	font-family: Arial, sans-serif;
-	background: url(../img/Background.jpg)
+	background: url(../img/Background.jpg) fixed
 	no-repeat center top /cover
 }
 

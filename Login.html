@@ -9,45 +9,97 @@ Login.css">
 	<link rel="stylesheet" href="css/media.css">
 	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 </head>
-	<canvas id="canvas" ></canvas>
-<body class="wrapper"> <!для  media >
+	<canvas id="canvas" ></canvas> <!-- Градиент -->
+
+<body class="wrapper"> <!--для  media-->
 	<section>
-	<div id="container" class="container"> 
-		<div  class="block">
-			<h1>Вход</h1>
-			<form class="window">
+	<div class="container"> 
+		<!--Форма  Входа-->
+			<div  class="blocklogin">
 
-				<div class="inBlock">
-					<input type="e-mail" name="e-mail" placeholder="e-mail" class="border">
-						<hr>			
-					<img src="img/Icon/IconUser.png" alt="user" class="image">
-				</div>
+				<h1>Вход</h1>
+					<form>
 
-				<div class="inBlock">
-					<input type="password" name="password" placeholder="Пароль" class="border">
-						<hr>
-					<img src="img/Icon/IconPassword.png" alt="password" class="image">
-				</div>
+						<div class="inBlock">
+							<input type="e-mail" name="e-mail" placeholder="E-mail" class="border">			
+							<img src="img/Icon/IconUser.png" alt="user" class="image">
+						</div>
 
-				<div class="inBlock">
-					<div class="shadow">
-						<button id="button" class="button">
-						<img src="img/Icon/IcomLogin.png" class="buttonimg">
-						</button> <br />
-						<a href="#" class="inBlock">Регистрация</a>
-					</div>
+						<div class="inBlock">
+							<input type="password" name="password" placeholder="Пароль" class="border">
+							<img src="img/Icon/IconPassword.png" alt="password" class="image">
+						</div>
+
+						<div class="inBlock">
+								<button class="button">
+								<img src="img/Icon/IcomLogin.png" class="buttonimg">
+								</button> 
+						</div>
+
+						<a onclick="show('block')" href="#" class="inBlockReg">Регистрация</a>
+
+					</form>	
+			</div>
+		<!--Форма  Регистрации-->
+		<div id="BlockReg">
+			<div  class="BlockReg">
+
+				<h1>Регистрация</h1>
+					<form>
+
+						<div class="inBlockReg">
+						<input type="e-mail" name="Name" placeholder="Имя" class="border">
+						<img src="img/Icon/name.png" alt="name" class="image">
+						</div>
+
+						<div class="inBlockReg">
+							<input type="e-mail" name="SurName" placeholder="Фамилия" class="border">
+							<img src="img/Icon/surname.png" alt="surname" class="image">
+						</div>
+
+						<div class="inBlockReg">
+							<input type="e-mail" name="E-mail" placeholder="E-mail" class="border">	
+							<img src="img/Icon/email.png" alt="email" class="image">	
+						</div>
+
+						<div class="inBlockReg">
+							<input type="password" name="password" placeholder="Пароль" class="border">	
+							<img src="img/Icon/IconPassword.png" alt="password" class="image">
+						</div>
+
+						<div class="inBlockReg">
+							<input type="password" name="AgianPassword" placeholder="Повторите пароль" class="border">
+							<img src="img/Icon/IconPassword.png" alt="password" class="image">
+						</div>
+
+						<div class="inBlockReg">
+							<button class="button">
+							<img src="img/Icon/IcomLogin.png" class="buttonimg">
+							</button>
+						</div>
+
+						<a href="#" class="inBlock">У меня есть аккаунт</a>
+
+					</form>>
 				</div>
-			</form>
 		</div>
-	</div>
 	</section>
-					 <!JS>	
+					 <!--JS-->	
 <script src="js/anime.min.js"></script>
 <script src="js/granim.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+<script type="text/javascript">
+	function show(state) {
+	document.getElementById('BlockReg').style.display = state;		
+	}
+</script>
+
+
 <script>
 	var cssSelector = anime ({
-		targets: '.container',
+		targets: '.blocklogin',
 		translateY: [-300, 0]
 	});
 	var cssSelector = anime ({

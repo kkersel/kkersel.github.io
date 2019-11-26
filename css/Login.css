@@ -48,20 +48,26 @@ h1 {
 	overflow: auto;
 	padding: 15px;
 	margin: 5px 0 0px 0;
-	font-size: 12px;
+	font-size: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
 }
+
 .border {
 	border-style: none;
 	height: 30px;
 	padding: 10px;
 }
+
 .image {
 	height: 30px;
 	margin-left: 10px;
 }
+
 .test {
 	padding: 0px 90px;
 }
+
 .button {
 	outline: 0;
 	margin-left: 2px;

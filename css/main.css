@@ -11,10 +11,10 @@ div {
 }
 
 header {
-	background: linear-gradient(to  top, #9900ff, #3366ff);
-	/*background: url(../img/MainBackground.jpg)*/
+	/*background: linear-gradient(to  top, #9900ff, #3366ff);*/
+	background: url(../img/bg.jpg)
 	no-repeat center top /cover;
-	height: 530px;
+	height: 480px;
 }
 
 nav {

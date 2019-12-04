@@ -4,13 +4,14 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Arial, sans-serif;
-	background-color: gray;
+	background-color: #CCCCCC;
 }
 
 header {
 	background: linear-gradient(to  top, #9900ff, #3366ff);
-	/*background: url(../img/MainBackground.jpg)
-	no-repeat center top /cover;*/
+	background: url(../img/bg.jpg)
+	no-repeat center top /cover;
+	height: 480px;
 }
 
 div {
@@ -22,7 +23,7 @@ h1 {
 	display: flex;
 	justify-content: center;
 	font-size: 40px;
-	margin-top: 30px;
+	padding: 25px 0px 0px 25px;
 }
 
 nav {
@@ -99,7 +100,7 @@ nav {
 
 .Block {
 	width: 750px;
-	height: 1900px;
+	height: 1920px;
 	background: #fff; 
 	margin: 0 auto;
 	border-radius: 50px;
@@ -120,6 +121,7 @@ nav {
 }
 
 .border {
+	border-style: none;
 	height: 30px;
 	padding: 10px;
 }
@@ -147,7 +149,7 @@ nav {
 	width: 40px;
 }
 
-
+/*radio button*/
 .card {
 	margin: 0 auto;
 	width: 300px;

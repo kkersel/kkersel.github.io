@@ -8,8 +8,7 @@ body {
 }
 
 header {
-	background: linear-gradient(to  top, #9900ff, #3366ff);
-	background: url(../img/bg.jpg)
+	background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5) ),url(../img/bg.jpg)
 	no-repeat center top /cover;
 	height: 480px;
 }

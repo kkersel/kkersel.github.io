@@ -12,8 +12,11 @@ div {
 
 header {
 	/*background: linear-gradient(to  top, #9900ff, #3366ff);*/
-	background: url(../img/bg.jpg)
-	no-repeat center top /cover;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8) ), url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top;
 	height: 480px;
 }
 

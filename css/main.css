@@ -11,9 +11,10 @@ div {
 }
 
 header {
-	background: url(../img/MainBackground.jpg)
-	 no-repeat center top /cover;
-	 height: 530px;
+	background: linear-gradient(to  top, #9900ff, #3366ff);
+	/*background: url(../img/MainBackground.jpg)*/
+	no-repeat center top /cover;
+	height: 530px;
 }
 
 nav {
@@ -81,7 +82,6 @@ nav  li  {
 }
 
 .logo {
-	display: flex;
 	margin-top: 18px;
 }
 
@@ -90,7 +90,7 @@ nav  li  {
 	display: block;
 	margin: 0 auto;
 	margin-top: 120px;
-	margin-left: 110px;
+	margin-left: 350px;
 	font-size: 58px;
 }
 
@@ -136,7 +136,7 @@ nav  li  {
   	font-size: 16px;
   	outline: 0;
 }
-
+	/*Панель с Иконками*/
 .underContainer {
 	display: flex;
 	height: 115px;

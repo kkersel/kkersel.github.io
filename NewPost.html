@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test1</title>
+	<link rel="stylesheet" href="css/NewPost.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head> 
+
+<body>
+
+	<header>
+			<!--Навигация по сайту-->
+		<div class="containerHead">
+			<nav>
+				<ul class="menu">
+					<li>
+						<a href="#">Найти практику</a> 
+					</li>
+
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+
+					<li>
+						<a href="NewPost.html">Добавить место практики</a>
+					</li>
+				</ul>
+				<!--Вход/Регистрация-->
+				<ul class="Reg">
+					<img src="img/icons/IconLogin.png" alt="IconLogin" class="logo">
+					<li>
+						<a href="Login.html">Вход</a>
+					</li>
+					<li>
+						<p class="ElementOfLogAndPas">|</p>
+					</li>
+					<li>
+						<a href="Login.html">Регистрация</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="Container">
+		<div class="Block">
+			<form action="">
+				<h1>Размещение стажировки</h1>
+				<p class="blocktitle">Где вас найти?</p>
+				<div class="inBlock">
+					<input type="email" name="e-mail" placeholder="Адресс" class="border">	
+				</div>
+
+				<div class="inBlock">
+					<input type="City" name="City" placeholder="Город" class="border">	
+				</div>
+
+				<p class="blocktitle">Расскажите о компании:</p>
+				<div class="inBlock">
+					<input type="label" name="label" placeholder="Название" class="border">	
+				</div>
+
+				<div class="inBlock">
+					<input type="Activities" name="Activities" placeholder="Деятельность 
+					организации" class="border">	
+				</div>
+				
+				<p class="blocktitle">Контактное лицо:</p>
+				<div class="inBlock">
+					<input type="Name" name="Name" placeholder="Имя" class="border">
+				</div>
+
+				<div class="inBlock">
+					<input type="SurName" name="SurName" placeholder="Фамилия" class="border">
+				</div>
+
+				<div class="inBlock">
+					<input type="e-mail" name="E-mail" placeholder="E-mail" class="border">	
+				</div>
+
+				<div class="inBlock">
+					<input type="tel" name="tel" placeholder="Телефон" class="border">	
+				</div>
+
+				<div class="inBlock">
+					<input type="site" name="site" placeholder="Сайт" class="border">	
+				</div>
+
+				<p class="blocktitle">Требование к кандидату :</p>
+				<div class="inBlock">
+					<label>Учащиеся :</label>
+					<input type="StudentOf" name="StudentOf" placeholder="Учащиеся" class="border">	
+				</div>
+
+				<div class="inBlock">
+					<label>Курс обучения :</label>
+					<input type="CourseOfStudy" name="CourseOfStudy" placeholder="Курс" class="border">	
+				</div>
+
+				<div class="inBlock">
+					<label>Отрасль :</label>
+					<input type="Industry" name="Industry" placeholder="Курс" class="border">
+				</div>
+
+				<p class="blocktitle">Описание стажировки:</p>
+				<div class="inBlock">
+					<input type="date"name="data" class="border">
+					<input type="date"name="data" class="border">
+				</div>
+						<!--Выбор занятости-->
+				<div id="test">
+
+					<h2>График работы</h2>
+
+					<ul>
+						<li>
+						<input type="radio" name="card" id="one" checked/>
+						<label for="one">Полная занятость</label>
+						<div class="check"></div>
+						</li>
+						
+						<li>
+						<input type="radio" name="card" id="two"/>
+						<label for="two">Частичная занятость</label>
+						<div class="check"></div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="inBlock">
+					<input type="WorkTime" name="WorkTime" placeholder="График работы" class="border">
+				</div>
+
+				<div class="inBlock">
+					<input type="Cash" name="Cash" placeholder="Зарплата" class="border">
+				</div>
+
+				<div class="inBlock">
+					<input type="text" name="Cash" placeholder="Какие навыки требуются" class="border">
+				</div>
+
+				<div class="inBlock">
+					<input type="text" name="Cash" placeholder="Какие задачи выполнять" class="border">
+				</div>
+
+				<div class="inBlock">
+					<input type="text" name="Cash" placeholder="Условия стажировки" class="border">
+				</div>
+
+				<div class="inBlock">
+					<button class="button">
+					<img src="img/Icon/IcomLogin.png" class="buttonimg">
+					</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+</body>
+</html>

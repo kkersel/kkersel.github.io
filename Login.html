@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Вход</title>
 	<link rel="stylesheet" href="css/Login.css">
-	<link rel="stylesheet" href="css/media.css">
 	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
 	<canvas id="canvas" ></canvas> <!-- Градиент -->
@@ -36,7 +35,6 @@
 						</div>
 
 						<a onclick="show('block')" href="#" class="inBlockReg" >Регистрация</a>
-
 					</form>	
 			</div>
 		<!--Форма  Регистрации-->
@@ -47,12 +45,12 @@
 					<form>
 
 						<div class="inBlockReg">
-						<input type="e-mail" name="Name" placeholder="Имя" class="border">
+						<input type="Name" name="Name" placeholder="Имя" class="border">
 						<img src="img/Icon/name.png" alt="name" class="image">
 						</div>
 
 						<div class="inBlockReg">
-							<input type="e-mail" name="SurName" placeholder="Фамилия" class="border">
+							<input type="SurName" name="SurName" placeholder="Фамилия" class="border">
 							<img src="img/Icon/surname.png" alt="surname" class="image">
 						</div>
 
@@ -89,13 +87,11 @@
 <script src="js/granim.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-
 <script type="text/javascript">
 	function show(state) {
 	document.getElementById('BlockReg').style.display = state;		
 	}
 </script>
-
 
 <script>
 	var cssSelector = anime ({
@@ -137,6 +133,5 @@ var granimInstance = new Granim({
     }
 });
 </script>
-
 </body>
 </html>

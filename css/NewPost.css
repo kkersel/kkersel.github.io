@@ -1,0 +1,207 @@
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: gray;
+}
+
+header {
+	background: linear-gradient(to  top, #9900ff, #3366ff);
+	/*background: url(../img/MainBackground.jpg)*/
+	no-repeat center top /cover;
+}
+
+div {
+	box-sizing: 
+	border-box;
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+	margin-top: 30PX;
+}
+
+nav {
+	display: flex;
+}
+
+/*Подзаголовки внутри блока*/
+.blocktitle {
+	display: flex;
+	justify-content: center;
+	font-size: 25px;
+}
+
+.containerHead {
+	width: 1520px;
+	margin: 0 auto;
+}
+
+.menu {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	margin-left: 70px;
+
+}
+
+.menu li { 
+	display: block;
+	margin-right: 20px;
+}
+
+.menu li a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.Reg {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	margin-left: 780px;
+}
+
+.Reg li {
+	display: block;
+	margin-left: 10px;
+}
+
+.Reg li a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.ElementOfLogAndPas { /*Пробел между "Вход" и "регистрация"*/
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
+
+.logo {
+	height: 20px;
+	margin-top: 20px;
+}	
+
+/* Секция
+	Блок с формой для размещение стажировки*/
+.Container {
+	width: 1520px;
+	height: 1900px;
+	margin: 0 auto;
+	border: 3px solid red;
+}
+
+.Block {
+	width: 750px;
+	height: 1900px;
+	background: #fff;
+	margin: 0 auto;
+	border-radius: 50px;
+}
+	
+.inBlock {				/*Элементы внутри блока*/
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	overflow: auto;
+	padding: 2px;
+	margin: 5px 0 0px 0;
+	font-size: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.border {
+	height: 30px;
+	padding: 10px;
+}
+
+.button {
+	outline: 0;
+	margin-top: 30px;
+	margin-bottom: 10px;	
+	height: 55px;
+	width: 160px;
+	border-radius: 50px;
+	border-style: ridge;
+	border-right-width: 1.5px;
+	border-left-width: 1.5px;
+	border-left-color: #656565;
+	border-bottom: none;
+	border-top: none;
+	border-right-color: #656565;
+	box-shadow: 0em 0.4em 5px rgba(122,122,122,0.5);
+    background: linear-gradient(to  left, #9900ff, #3366ff);
+}
+
+.buttonimg {
+	height: 30px;
+	width: 40px;
+}
+
+
+#test {
+	margin: 0 auto;
+	width: 300px;
+	padding: 10px 10px 10px;
+	border: 1px solid green;
+}
+
+input[type=radio] {
+	visibility: hidden;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 80px;
+	margin: 0 auto;
+}
+
+li {
+	display: block;
+	position: relative;
+	padding: 20px 0px;
+}
+
+/* Radio Button
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.check {
+	width: 30px; height: 30px;
+	position: absolute;
+	border-radius: 50%;
+	transition: transform .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+label { 
+	cursor: pointer; 
+	font-weight: 400;
+}
+
+/* Reset */
+input#one ~ .check { 
+	transform: translate(-50px, -25px); 
+	background: var(--secondary-c); 
+}
+input#two ~ .check { 
+	transform: translate(-50px, -83px); 
+	background: linear-gradient(to  left, #9900ff, #3366ff);
+	box-shadow: 0em 0.4em 5px rgba(122,122,122,0.5);
+}
+
+/* Radio Input #1 */
+input#one:checked ~ .check { transform: translate(-50px, 33px); }
+
+/* Radio Input #2  */
+input#two:checked ~ .check { transform: translate(-50px, -25px); }
+

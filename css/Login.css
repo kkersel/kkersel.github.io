@@ -91,6 +91,11 @@ h1 {
     background: linear-gradient(to  left, #9900ff, #3366ff);
 }
 
+#backlink a {
+	margin: 0 auto;
+	margin-top: 1200px;
+	display: flex;
+}
 .buttonimg {
 	height: 30px;
 	width: 40px;

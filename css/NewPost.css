@@ -1,5 +1,4 @@
 
-
 body {
 	margin: 0;
 	padding: 0;
@@ -22,15 +21,19 @@ div {
 	border-box;
 }
 
+nav {
+	display: flex;
+}
+
+nav  li  {
+	margin-top: 20px;
+}
+
 h1 {
 	display: flex;
 	justify-content: center;
 	font-size: 40px;
 	padding: 25px 0px 0px 25px;
-}
-
-nav {
-	display: flex;
 }
 
 /*Подзаголовки внутри блока*/
@@ -50,7 +53,6 @@ nav {
 	padding: 0;
 	margin: 0;
 	margin-left: 70px;
-
 }
 
 .menu li { 
@@ -91,16 +93,12 @@ nav {
 }
 
 .logo {
-	height: 20px;
-	margin-top: 20px;
-}	
+	margin-top: 19px;
+}
 
 /* Секция
 	Блок с формой для размещение стажировки*/
-.Container {
-	height: 1900px;
-	margin: 0 auto;
-}
+
 
 .Block {
 	width: 750px;
@@ -164,13 +162,13 @@ input[type=radio] {
 	visibility: hidden;
 }
 
-ul {
+.card ul {
 	list-style-type: none;
 	padding-left: 80px;
 	margin: 0 auto;
 }
 
-li {
+.card li {
 	display: block;
 	position: relative;
 	padding: 20px 0px;
@@ -207,3 +205,9 @@ input#one:checked ~ .check { transform: translate(-50px, 33px); }
 /* Radio Input #2  */
 input#two:checked ~ .check { transform: translate(-50px, -25px); }
 
+/*Колесико мышки есть для этого)0)0*/
+::-webkit-scrollbar {
+
+width: 0px;
+
+}

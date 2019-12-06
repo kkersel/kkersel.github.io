@@ -47,7 +47,7 @@ h1 {
 	width: 1520px;
 	margin: 0 auto;
 }
-
+/*Левая часть nav бара*/
 .menu {
 	display: flex;
 	padding: 0;
@@ -66,7 +66,7 @@ h1 {
 	text-transform: uppercase;
 	font-size: 14px;
 }
-
+/*Правая часть nav бара*/
 .Reg {
 	display: flex;
 	padding: 0;
@@ -91,15 +91,13 @@ h1 {
 	padding: 0;
 	margin: 0;
 }
-
+/*лого в правой части нав бара*/
 .logo {
 	margin-top: 19px;
 }
 
 /* Секция
 	Блок с формой для размещение стажировки*/
-
-
 .Block {
 	width: 750px;
 	height: 1920px;
@@ -174,8 +172,6 @@ input[type=radio] {
 	padding: 20px 0px;
 }
 
-/* Radio Button
-––––––––––––––––––––––––––––––––––––––––––––––––––*/
 .check {
 	width: 30px; height: 30px;
 	position: absolute;
@@ -205,9 +201,9 @@ input#one:checked ~ .check { transform: translate(-50px, 33px); }
 /* Radio Input #2  */
 input#two:checked ~ .check { transform: translate(-50px, -25px); }
 
-/*Колесико мышки есть для этого)0)0*/
+/*Колесико мышки есть для этого)0)0
+	Пока только для хроома*/
 ::-webkit-scrollbar {
-
 width: 0px;
-
 }
+

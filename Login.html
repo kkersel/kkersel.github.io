@@ -26,7 +26,7 @@
 						</div>
 
 						<div class="inBlock">
-								<button class="button">
+								<button class="button" onclick="Input()">
 								<img src="img/Icon/IcomLogin.png" class="buttonimg">
 								</button> 
 						</div>
@@ -44,27 +44,27 @@
 					<form>
 
 						<div class="inBlockReg">
-						<input type="Name" name="Name" placeholder="Имя" class="border">
+						<input type="text" name="Name" placeholder="Имя" class="border" required>
 						<img src="img/Icon/name.png" alt="name" class="image">
 						</div>
 
 						<div class="inBlockReg">
-							<input type="SurName" name="SurName" placeholder="Фамилия" class="border">
+							<input type="text" name="SurName" placeholder="Фамилия" class="border" required>
 							<img src="img/Icon/surname.png" alt="surname" class="image">
 						</div>
 
 						<div class="inBlockReg">
-							<input type="email" name="E-mail" placeholder="E-mail" class="border">	
+							<input type="email" name="E-mail" placeholder="E-mail" class="border" required>	
 							<img src="img/Icon/email.png" alt="email" class="image">	
 						</div>
 
 						<div class="inBlockReg">
-							<input type="password" name="password" placeholder="Пароль" class="border">	
+							<input type="password" name="password" placeholder="Пароль" class="border" required>	
 							<img src="img/Icon/IconPassword.png" alt="password" class="image">
 						</div>
 
 						<div class="inBlockReg">
-							<input type="password" name="AgianPassword" placeholder="Повторите пароль" class="border">
+							<input type="password" name="AgianPassword" placeholder="Повторите пароль" class="border" required>
 							<img src="img/Icon/IconPassword.png" alt="password" class="image">
 						</div>
 
@@ -131,6 +131,26 @@ var granimInstance = new Granim({
         }
     }
 });
+</script>
+
+<!--Авторизация-->
+<script type="text/javascript">
+function Input(){
+login_ok = false;
+user_name = "";
+password = "";
+user_name = prompt("Логин","");
+user_name = user_name.toLowerCase();
+password = prompt("Пароль","");
+password = password.toLowerCase();
+if (user_name=="login" && password=="pass") {
+ login_ok = true;
+ window.location = "index.html";
+}
+
+if (login_ok==false) alert("Неверный логин или пароль!");
+}
+
 </script>
 </body>
 </html>

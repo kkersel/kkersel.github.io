@@ -89,7 +89,7 @@ nav  li  {
 	margin-top: 19px;
 }
 
-.title {
+.title {				/*блоки на страницах "контакты" и "Практики" выровнены по title*/
 	color: #fff;
 	display: block;
 	margin: 0 auto;
@@ -135,7 +135,7 @@ nav  li  {
   	width: 120px;
   	position: absolute;
   	top: 1.7px;
- 	right: 10px;
+ 	right: 17px;
  	cursor: pointer;
   	font-size: 16px;
   	outline: 0;
@@ -168,7 +168,7 @@ nav  li  {
 	margin-top: 12px;
 }
 
-.text {
+.Text {
 	margin: 0 auto;
 	text-align: center;
 }

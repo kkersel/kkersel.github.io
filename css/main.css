@@ -12,7 +12,7 @@ div {
 
 header {
 	/*background: linear-gradient(to  top, #9900ff, #3366ff);*/
-	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8) ), url(../img/bg.jpg);
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8) ), url(../img/bg.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -89,7 +89,7 @@ nav  li  {
 	margin-top: 19px;
 }
 
-.title {				/*блоки на страницах "контакты" и "Практики" выровнены по title*/
+.title {	/*блоки на страницах "контакты" и "Практики" выровнены по title*/
 	color: #fff;
 	display: block;
 	margin: 0 auto;
@@ -161,6 +161,7 @@ nav  li  {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 14px;
+	color: #000;
 }
 
 .Icons {

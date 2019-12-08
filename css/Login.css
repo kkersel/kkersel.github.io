@@ -93,13 +93,6 @@ h1 {
     background-size: auto 90%;
 }
 
-
-#backlink a {
-	margin: 0 auto;
-	margin-top: 1200px;
-	display: flex;
-}
-
 .buttonimg {
 	height: 30px;
 	width: 40px;
@@ -128,6 +121,3 @@ h1 {
 	text-transform: uppercase;
 }
 
-.inBlock a {
-	padding: 0px;
-}

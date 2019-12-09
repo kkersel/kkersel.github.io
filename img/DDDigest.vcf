@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION;TYPE=WORK:3.0
+FN;CHARSET=UTF-8:Alex Miller
+N;CHARSET=UTF-8:Alex Miller;;;;
+PROFILE:VCARD
+ADR;CHARSET=UTF-8:;;Kuusen str 54;Moscow;;102159;Russia
+EMAIL:info@designcritique.ru
+ORG;CHARSET=UTF-8:DDDigest
+URL:http://gr6.ru
+END:VCARD

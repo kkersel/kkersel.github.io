@@ -43,115 +43,137 @@
 		</div>
 		
 		<div class="Block">
-			<h1>Размещение стажировки</h1>
+			<h1>Размещение практики</h1>
 			<form action="">
-				<p class="blocktitle">Где вас найти?</p>
-				<div class="inBlock">
-					<input type="address" name="address" placeholder="Адресс" class="border" required="">	
-				</div>
+				<div class="color1">
+					<p class="blocktitle">Адресс компании</p>
+					<div class="inBlock">	
+						<input type="City" id="City" placeholder="Город" class="border" required="">	
+					</div>
 
-				<div class="inBlock">
-					<input type="City" name="City" placeholder="Город" class="border" required="">	
-				</div>
-
-				<p class="blocktitle">Расскажите о компании</p>
-				<div class="inBlock">
-					<input type="text" name="label" placeholder="Название" class="border" required="">	
-				</div>
-
-				<div class="inBlock">
-					<input type="text" name="Activities" placeholder="Деятельность 
-					организации" class="border" required="">	
+					<div class="inBlock">
+						<input type="address" id="address" placeholder="Адресс" class="border" required="">
+					</div>
 				</div>
 				
-				<p class="blocktitle">Контактное лицо</p>
+				<div class="color2">
+				<p class="blocktitle">Расскажите о компании</p>
 				<div class="inBlock">
-					<input type="Name" name="Name" placeholder="Имя" class="border" required="">
+					<input type="text" id="label" placeholder="Название" class="border" required="">	
 				</div>
 
 				<div class="inBlock">
-					<input type="SurName" name="SurName" placeholder="Фамилия" class="border" required="">
+					<input type="text" id="Activities" placeholder="Деятельность 
+					организации" class="border" required="">	
+				</div>
+				</div>
+				
+				<div class="color3">
+					<p class="blocktitle">Контактное лицо</p>
+					<div class="inBlock">
+						<input type="Name" id="Name" placeholder="Имя" class="border" required="">
+					</div>
+
+				<div class="inBlock">
+					<input type="SurName" id="SurName" placeholder="Фамилия" class="border" required="">
 				</div>
 
 				<div class="inBlock">
-					<input type="email" name="E-mail" placeholder="E-mail" class="border" required="">	
+					<input type="email" id="E-mail" placeholder="E-mail" class="border" required="">	
 				</div>
 
 				<div class="inBlock">
-					<input type="tel" name="tel" placeholder="Телефон" class="border"  required="">	
+					<input type="tel" id="tel" placeholder="Телефон" class="border"  required="">	
 				</div>
 
 				<div class="inBlock">
-					<input type="site" name="site" placeholder="Сайт" class="border" required="">	
+					<input type="site" id="site" placeholder="Сайт" class="border" required="">	
 				</div>
+				</div>
+				
+				<div class="color4">
+					<p class="blocktitle">Требование к студенту</p>
+					<div class="inBlock">
+						<input type="text" id="StudentOf" placeholder="Учащиеся" class="border"  required="">	
+					</div>
 
-				<p class="blocktitle">Требование к кандидату</p>
-				<div class="inBlock">
-					<label>Учащиеся</label>
-					<input type="text" name="StudentOf" placeholder="Учащиеся" class="border"  required="">	
-				</div>
+					<div class="inBlock">
+						<input type="text" id="CourseOfStudy" placeholder="Курс" class="border"  required="">
+					</div>
 
-				<div class="inBlock">
-					<label>Курс обучения</label>
-					<input type="text" name="CourseOfStudy" placeholder="Курс" class="border"  required="">
+					<div class="inBlock">
+						<select name="select" id="" class="selector">
+							<option value="">Выберете направление</option>
+							<option value="isip">Информационные системы и программирование</option>
+							<option value="c">Сетевое и системное администрирование</option>
+							<option value="cs">Обеспечение информационной безопасности автоматизированных систем </option>
+						</select>
+					</div>
 				</div>
+				
+				<div class="color5">
+					<p class="blocktitle">Описание стажировки</p>
+					
+							<!--Выбор занятости-->
+						<div class="cardcolor">
+							<div class="card">
+								<ul class="card">
+									<li>
+									<input type="radio" name="cardAfter" id="one" checked/>
+									<label for="one" class="cardfontsize">Полная занятость</label>
+									<div class="check"></div>
+									</li>
+									
+									<li>
+									<input type="radio" name="cardAfter" id="two"/>
+									<label for="two" class="cardfontsize">Частичная занятость</label>
+									<div class="check"></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+			
+				
 
-				<div class="inBlock">
-					<label>Отрасль</label>
-					<select name="select" id="">
-						<option value="isip">Информационные системы и программирование</option>
-						<option value="c">Сетевое и системное администрирование</option>
-						<option value="cs">Обеспечение информационной безопасности автоматизированных систем </option>
-					</select>
-				</div>
+					<div class="inBlock">
+						<input type="text" id="Cash" placeholder="Зарплата" class="border" required="">
+					</div>
+					
+					
+						<div class="inBlock">
+							<div id="dummy"></div>
+							<textarea type="text" class="textarea" placeholder="Какие навыки требуются:" id="editor" required=""></textarea>
+						</div>
 
-				<p class="blocktitle">Описание стажировки</p>
-				<div class="inBlock">
-					<input type="date"name="data" class="border">
-					<input type="date"name="data" class="border">
-				</div>
-						<!--Выбор занятости-->
-				<div class="card">
-					<h2>График работы</h2>
-					<ul class="card">
-						<li>
-						<input type="radio" name="card" id="one" checked/>
-						<label for="one">Полная занятость</label>
-						<div class="check"></div>
-						</li>
-						
-						<li>
-						<input type="radio" name="card" id="two"/>
-						<label for="two">Частичная занятость</label>
-						<div class="check"></div>
-						</li>
-					</ul>
-				</div>
+						<div class="inBlock">
+							<div id="dummy"></div>
+							<textarea type="text" class="textarea" placeholder="Какие задачи выполнять:" id="editor" required=""></textarea>
+						</div>
 
-				<div class="inBlock">
-					<input type="text" name="WorkTime" placeholder="График работы" class="border">
-				</div>
+						<div class="inBlock">
+							<div id="dummy"></div>
+							<textarea type="text" class="textarea" placeholder="Условия стажировки:" id="editor" required=""></textarea>
+						</div>
+					
+					<div class="cardTwo">
+						<div class="cardTwoAfter">
+							<div class="inBlock">
+								<input type="checkbox" id="c1" name="cc"/>
+								<label for="c1">Обещаем трудоустройство</label>
+							</div>
 
-				<div class="inBlock">
-					<input type="text" name="Cash" placeholder="Зарплата" class="border">
-				</div>
+							<div class="inBlock">
+								<input type="checkbox" id="c2" name="cc">
+								<label for="c2">Обещаем трудоустройство</label>
+							</div>
+						</div>
+					</div>
 
-				<div class="inBlock">
-					<input type="text" name="Cash" placeholder="Какие навыки требуются" class="border">
-				</div>
-
-				<div class="inBlock">
-					<input type="text" name="Cash" placeholder="Какие задачи выполнять" class="border">
-				</div>
-
-				<div class="inBlock">
-					<input type="text" name="Cash" placeholder="Условия стажировки" class="border">
-				</div>
-
-				<div class="inBlock">
-					<button class="button">
-					<img src="img/Icon/IcomLogin.png" class="buttonimg">
-					</button>
+					<div class="inBlock">
+						<button class="button">
+						<img src="img/Icon/IcomLogin.png" class="buttonimg">
+						</button>
+					</div>
 				</div>
 			</form>
 		</div>
@@ -160,6 +182,17 @@
 	<section class="Container">
 
 	</section>
+
+<!--Textarea-->
+<script>
+var editor = document.getElementById('editor'),
+      dummy = document.getElementById('dummy')
+editor.addEventListener('keyup',function(){
+   dummy.innerText = this.value;
+   dummy.style.width = this.offsetWidth+'px';
+   this.style.height = dummy.offsetHeight+'px';
+},false)
+</script>
 
 </body>
 </html>

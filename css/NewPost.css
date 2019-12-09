@@ -121,10 +121,77 @@ h1 {
 	position: relative;
 }
 
+.color1 {
+	background-color: #fec9b7; 
+	border-radius: 25px;
+	padding: 5px;
+	height: 200px;
+	width: 550px;
+	margin: 0 auto;
+	border: 2px solid #fff;
+}
+.color2 {
+	background-color: #FFCC99;
+	border-radius: 25px;
+	height: 200px;
+	padding: 5px;
+	width: 550px;
+	margin: 0 auto;
+	border: 2px solid #fff;
+}
+.color3 {
+	background-color: #FFCC66;
+	border-radius: 25px;
+	height: 350px;
+	padding: 5px;
+	width: 550px;
+	margin: 0 auto;
+	border: 2px solid #fff;
+}
+.color4 {
+	background-color: #CC9966;
+	border-radius: 25px;
+	height: 245px;
+	padding: 5px;	
+	width: 550px;
+	margin: 0 auto;
+	border: 2px solid #fff;
+}
+.color5 {
+	background-color: #62bebb;
+	border-radius: 25px;
+	height: 600px;
+	padding: 5px;	
+	width: 550px;
+	margin: 0 auto;
+	border: 2px solid #fff;
+}
+
 .border {
 	border-style: none;
-	height: 30px;
+	height: 20px;
 	padding: 10px;
+	border-radius: 8px;
+}
+
+.textarea {
+	outline: none;
+	width: 330px;
+	border-radius: 8px;
+	padding: 10px;
+}
+
+.selector {
+	width: 350px;
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 2px rgb(204, 204, 204);
+	transition: all .5s ease;
+	position: relative;
+	font-size: 14px;
+	color: #474747;
+	height: 35px;
 }
 
 .button {
@@ -150,15 +217,37 @@ h1 {
 	width: 40px;
 }
 
-/*radio button*/
-.card {
-	margin: 0 auto;
-	width: 300px;
-	padding: 10px 10px 10px;
+
+/*Чекбоксы*/
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(check_radio_sheet.png) -19px top no-repeat;
 }
 
 input[type=radio] {
 	visibility: hidden;
+}
+
+/*radio button*/
+.cardcolor {
+	border: 1px solid red;
+}
+
+.card {
+	margin: 0 auto;
+	width: 300px;
+	padding: 10px 10px 10px;
 }
 
 .card ul {
@@ -182,18 +271,15 @@ input[type=radio] {
 
 label { 
 	cursor: pointer; 
-	font-weight: 400;
 }
 
 /* Reset */
 input#one ~ .check { 
 	transform: translate(-50px, -25px); 
-	background: var(--secondary-c); 
 }
 input#two ~ .check { 
 	transform: translate(-50px, -83px); 
 	background: linear-gradient(to  left, #9900ff, #3366ff);
-	box-shadow: 0em 0.4em 5px rgba(122,122,122,0.5);
 }
 
 /* Radio Input #1 */
@@ -201,6 +287,28 @@ input#one:checked ~ .check { transform: translate(-50px, 33px); }
 
 /* Radio Input #2  */
 input#two:checked ~ .check { transform: translate(-50px, -25px); }
+
+.cardTwo {
+	margin: 10px;
+}
+
+.cardTwoAfter {
+	background: #fff;
+	border-radius: 10px;
+	margin: 0 auto;
+	width: 200px;
+	padding: 10px 10px 10px;
+}
+
+#dummy{ /*textarea*/
+	 visibility:hidden;
+	 font-size: 14px;
+	 line-height: 14px;
+	 position:absolute;
+	 white-space: pre;
+	 word-break: break-all;
+	 padding: 5px;
+}
 
 /*Колесико мышки есть для этого)0)0
 	Пока только для хроома*/

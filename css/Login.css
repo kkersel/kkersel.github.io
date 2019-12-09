@@ -65,9 +65,11 @@ h1 {
 
 .border {
 	border-style: none;
-	height: 30px;
+	height: 20px;
 	padding: 10px;
+	border-radius: 8px;
 }
+
 
 .image {
 	height: 22px;
@@ -120,4 +122,3 @@ h1 {
 	text-decoration: none;
 	text-transform: uppercase;
 }
-

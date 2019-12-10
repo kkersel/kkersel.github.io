@@ -240,9 +240,6 @@ input[type=radio] {
 }
 
 /*radio button*/
-.cardcolor {
-	border: 1px solid red;
-}
 
 .card {
 	margin: 0 auto;

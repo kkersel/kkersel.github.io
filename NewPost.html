@@ -6,6 +6,7 @@
 	<title>Размещение</title>
 	<link rel="stylesheet" href="css/NewPost.css">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
 </head> 
 
 <body>
@@ -70,6 +71,7 @@
 				
 				<div class="color3">
 					<p class="blocktitle">Контактное лицо</p>
+
 					<div class="inBlock">
 						<input type="Name" id="Name" placeholder="Имя" class="border" required="">
 					</div>
@@ -93,6 +95,7 @@
 				
 				<div class="color4">
 					<p class="blocktitle">Требование к студенту</p>
+
 					<div class="inBlock">
 						<input type="text" id="StudentOf" placeholder="Учащиеся" class="border"  required="">	
 					</div>
@@ -112,10 +115,16 @@
 				</div>
 				
 				<div class="color5">
-					<p class="blocktitle">Описание стажировки</p>
+				
+					<p class="blocktitle">Описание практики</p>
 					
+							<div class="inBlock">
+									<input type="text" placeholder="Зарплата" id="c1" name="inp" class="inp border" required="">
+									<label for="c1">₽</label>
+							</div>
+
 							<!--Выбор занятости-->
-						
+							<div class="cardTwo"> <!--Такой класс для отсутпа, ы-->
 							<div class="card">
 								<ul class="card">
 									<li>
@@ -131,13 +140,21 @@
 									</li>
 								</ul>
 							</div>
-						
-				
+							</div>
 
-					<div class="inBlock">
-						<input type="text" id="Cash" placeholder="Зарплата" class="border" required="">
-					</div>
-					
+						<div class="cardTwo">
+							<div class="cardTwoAfter">
+								<div class="inBlock">
+									<input type="checkbox" id="checkbox1" name="checkbox"/>
+									<label for="checkbox1">Оплачеваемая практика</label>
+								</div>
+
+								<div class="inBlock">
+									<input type="checkbox" id="checkbox2" name="cc" checked="">
+									<label for="checkbox2">Гарантия трудоустройства</label>
+								</div>
+							</div>
+						</div>	
 					
 						<div class="inBlock">
 							<div id="dummy"></div>
@@ -153,26 +170,13 @@
 							<div id="dummy"></div>
 							<textarea type="text" class="textarea" placeholder="Условия стажировки:" id="editor" required=""></textarea>
 						</div>
-					
-					<div class="cardTwo">
-						<div class="cardTwoAfter">
-							<div class="inBlock">
-								<input type="checkbox" id="c1" name="cc"/>
-								<label for="c1">Обещаем трудоустройство</label>
-							</div>
-
-							<div class="inBlock">
-								<input type="checkbox" id="c2" name="cc">
-								<label for="c2">Обещаем трудоустройство</label>
-							</div>
-						</div>
-					</div>
 
 					<div class="inBlock">
 						<button class="button">
 						<img src="img/Icon/IcomLogin.png" class="buttonimg">
 						</button>
 					</div>
+
 				</div>
 			</form>
 		</div>
@@ -181,6 +185,33 @@
 	<section class="Container">
 
 	</section>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<!--Выключаем  input "Зарплата через checkbox"-->
+<script>
+
+$(document).ready(function() {
+    // Данный механизм устанавливает атрибут checked в нашем чекбоксе, где срабатывает условие для самого чекбокса.
+    $('input[type="checkbox"]' ).on( "click", function() {
+        if($(this).is(":checked")) {
+            $(this).attr('cheked', 'cheked');
+        } else {
+            $(this).removeAttr('cheked', 'cheked');
+        }
+    });
+
+    // Механизм который отвечает за отключение и включения ввода информации в поле input=text
+    $('#checkbox1').on('click', function(event) {
+        if($('#checkbox1').is(':checked')) {
+            $('.inBlock').find('.inp').attr('disabled', 'disabled');
+        } else {
+            $('.inBlock').find('.inp').removeAttr('disabled');
+        }
+    });
+});
+
+</script>
 
 <!--Textarea-->
 <script>

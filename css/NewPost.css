@@ -160,7 +160,7 @@ h1 {
 .color5 {
 	background-color: #62bebb;
 	border-radius: 25px;
-	height: 600px;
+	height: 587px;
 	padding: 5px;	
 	width: 550px;
 	margin: 0 auto;
@@ -174,11 +174,23 @@ h1 {
 	border-radius: 8px;
 }
 
-.textarea {
+.textarea {					/*textarea*/
 	outline: none;
 	width: 330px;
+	height: 40px;
 	border-radius: 8px;
 	padding: 10px;
+	resize: vertical;
+}
+
+#dummy { 					/*textarea*/
+	visibility: hidden;
+	font-size: 14px;
+	line-height: 14px;
+	position: static;
+	white-space: pre;
+	word-break: break-all;
+	padding: 5px;
 }
 
 .selector {
@@ -190,7 +202,6 @@ h1 {
 	transition: all .5s ease;
 	position: relative;
 	font-size: 14px;
-	color: #474747;
 	height: 35px;
 }
 
@@ -217,40 +228,26 @@ h1 {
 	width: 40px;
 }
 
-
-/*Чекбоксы*/
-input[type="checkbox"] {
-    display:none;
-}
-input[type="checkbox"] + label span {
-    display:inline-block;
-    width:19px;
-    height:19px;
-    margin:-1px 4px 0 0;
-    vertical-align:middle;
-    background:url(check_radio_sheet.png) left top no-repeat;
-    cursor:pointer;
-}
-input[type="checkbox"]:checked + label span {
-    background:url(check_radio_sheet.png) -19px top no-repeat;
+.card {							/*radio button*/
+	background-color: #fff;
+	border-radius: 10px;
+	margin: 0 auto;
+	width: 300px;
 }
 
-input[type=radio] {
+				/*	выключение поля "Зарплата" по чекбоксу	*/
+
+
+input[type=radio] { 		 /* скрываем точки  от radio */
 	visibility: hidden;
 }
 
-/*radio button*/
-
-.card {
-	margin: 0 auto;
-	width: 300px;
-	padding: 10px 10px 10px;
-}
-
 .card ul {
+	background: none;
 	list-style-type: none;
 	padding-left: 80px;
 	margin: 0 auto;
+	font-size: 14px;
 }
 
 .card li {
@@ -270,7 +267,7 @@ label {
 	cursor: pointer; 
 }
 
-/* Reset */
+/* Reset Анимация radio  button*/
 input#one ~ .check { 
 	transform: translate(-50px, -25px); 
 }
@@ -285,6 +282,7 @@ input#one:checked ~ .check { transform: translate(-50px, 33px); }
 /* Radio Input #2  */
 input#two:checked ~ .check { transform: translate(-50px, -25px); }
 
+/* отступ формы с чекбоксами  */
 .cardTwo {
 	margin: 10px;
 }
@@ -293,20 +291,9 @@ input#two:checked ~ .check { transform: translate(-50px, -25px); }
 	background: #fff;
 	border-radius: 10px;
 	margin: 0 auto;
-	width: 200px;
+	width: 330px;
 	padding: 10px 10px 10px;
 }
-
-#dummy{ /*textarea*/
-	 visibility:hidden;
-	 font-size: 14px;
-	 line-height: 14px;
-	 position:absolute;
-	 white-space: pre;
-	 word-break: break-all;
-	 padding: 5px;
-}
-
 /*Колесико мышки есть для этого)0)0
 	Пока только для хроома*/
 ::-webkit-scrollbar {

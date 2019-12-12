@@ -27,6 +27,7 @@ nav {
 
 nav  li  {
 	margin-top: 20px;
+	-webkit-user-select: none;
 }
 
 h1 {

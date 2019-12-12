@@ -6,6 +6,7 @@ body {
 	-webkit-user-select: none;  /*	Запрет для  выделение текста для chrome,opera,safari*/
 }
 
+
 div {
 	box-sizing: 
 	border-box;
@@ -27,6 +28,7 @@ nav {
 
 nav  li  {
 	margin-top: 20px;
+	-webkit-user-select: none;
 }
 
 
@@ -139,6 +141,7 @@ nav  li  {
  	cursor: pointer;
   	font-size: 16px;
   	outline: 0;
+  	-webkit-user-select: none;
 }
 	/*Панель с Иконками*/
 .underContainer {
@@ -149,6 +152,7 @@ nav  li  {
 	margin: 0 auto;
 	border-bottom-right-radius: 75px;
 	border-bottom-left-radius: 75px;
+	-webkit-user-select: none;
 }
 
 .centralMenu {

@@ -17,7 +17,7 @@ header {
 }
 
 section {
-	height: 1600px;
+	height: 1615px;
 	background-color: #CCCCCC;
 	margin: 0 auto;
 }
@@ -39,11 +39,11 @@ div {
 
 nav {
 	display: flex;
+	-webkit-user-select: none;
 }
 
 nav  li  {
 	margin-top: 20px;
-	-webkit-user-select: none;
 }
 
 h1 {
@@ -152,7 +152,7 @@ h1 {
 	background: -webkit-linear-gradient(#5FCFCB, #61BDBD);
 	background: -o-linear-gradient(#5FCFCB, #61BDBD);
 	background: linear-gradient(#5FCFCB, #61BDBD); 
-	border-radius: 25px;
+	border-radius: 30px;
 	padding: 5px;
 	height: 200px;
 	width: 550px;
@@ -161,7 +161,7 @@ h1 {
 }
 .color2 {
 	background: linear-gradient(to bottom left, #62B9BD, #63B6BE); 
-	border-radius: 25px;
+	border-radius: 30px;
 	height: 200px;
 	padding: 5px;
 	width: 550px;
@@ -170,7 +170,7 @@ h1 {
 }
 .color3 {
 	background: linear-gradient(to bottom right, #64B4BF, #65B1BF); 
-	border-radius: 25px;
+	border-radius: 30px;
 	height: 350px;
 	padding: 5px;
 	width: 550px;
@@ -179,7 +179,7 @@ h1 {
 }
 .color4 {
 	background: linear-gradient(to bottom left, #66AFC0, #66ADC0); 
-	border-radius: 25px;
+	border-radius: 30px;
 	height: 245px;
 	padding: 5px;	
 	width: 550px;
@@ -188,7 +188,7 @@ h1 {
 }
 .color5 {
 	background: linear-gradient(to bottom, #67AAC1, #69A5C2); 
-	border-radius: 25px;
+	border-radius: 30px;
 	height: 720px;
 	padding: 5px;	
 	width: 550px;
@@ -225,6 +225,7 @@ h1 {
 	font-size: 14px;
 	height: 35px;
 	padding: 5px;
+	outline: none;
 }
 
 .button {
@@ -271,7 +272,7 @@ input[type=radio] { 		 /* скрываем точки  от radio */
 	padding: 5px 0px;
 }
 
-.check {
+.ome {
 	width: 30px; height: 30px;
 	position: absolute;
 	border-radius: 50%;
@@ -283,9 +284,9 @@ label {
 }
 
 /* Reset Анимация radio  button*/
-input#one ~ .check { 
-	transform: translate(-50px, -25px); 
-	background: 
+input#one ~ .one { 
+	transform: translate(-50px, -16px); 
+	background: #CCCCCC;
 }
 
 input#two ~ .check { 
@@ -294,7 +295,7 @@ input#two ~ .check {
 }
 
 /* Radio Input #1 */
-input#one:checked ~ .check { transform: translate(-50px, 25px); }
+input :checked ~ .one { transform: translate(-50px, 12px); }
 
 /* Radio Input #2  */
 input#two:checked ~ .check { transform: translate(-50px, -25px); }

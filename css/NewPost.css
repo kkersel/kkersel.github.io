@@ -16,6 +16,8 @@ header {
 	height: 480px;
 }
 
+
+
 div {
 	box-sizing: 
 	border-box;
@@ -119,11 +121,10 @@ h1 {
 	font-size: 10px;
 	text-decoration: none;
 	text-transform: uppercase;
-	position: relative;
 }
 
 .color1 {
-	background-color: #fec9b7; 
+	background: linear-gradient(to bottom, #5FCFCB, #61BDBD); 
 	border-radius: 25px;
 	padding: 5px;
 	height: 200px;
@@ -132,7 +133,7 @@ h1 {
 	border: 2px solid #fff;
 }
 .color2 {
-	background-color: #FFCC99;
+	background: linear-gradient(to bottom left, #62B9BD, #63B6BE); 
 	border-radius: 25px;
 	height: 200px;
 	padding: 5px;
@@ -141,7 +142,7 @@ h1 {
 	border: 2px solid #fff;
 }
 .color3 {
-	background-color: #FFCC66;
+	background: linear-gradient(to bottom right, #64B4BF, #65B1BF); 
 	border-radius: 25px;
 	height: 350px;
 	padding: 5px;
@@ -150,7 +151,7 @@ h1 {
 	border: 2px solid #fff;
 }
 .color4 {
-	background-color: #CC9966;
+	background: linear-gradient(to bottom left, #66AFC0, #66ADC0); 
 	border-radius: 25px;
 	height: 245px;
 	padding: 5px;	
@@ -159,9 +160,9 @@ h1 {
 	border: 2px solid #fff;
 }
 .color5 {
-	background-color: #62bebb;
+	background: linear-gradient(to bottom, #67AAC1, #69A5C2); 
 	border-radius: 25px;
-	height: 587px;
+	height: 720px;
 	padding: 5px;	
 	width: 550px;
 	margin: 0 auto;
@@ -173,25 +174,17 @@ h1 {
 	height: 20px;
 	padding: 10px;
 	border-radius: 8px;
+	outline: none;
 }
 
 .textarea {					/*textarea*/
 	outline: none;
-	width: 330px;
-	height: 40px;
+	width: 450px;
+	height: 60px;
 	border-radius: 8px;
 	padding: 10px;
-	resize: vertical;
-}
-
-#dummy { 					/*textarea*/
-	visibility: hidden;
-	font-size: 14px;
-	line-height: 14px;
-	position: static;
-	white-space: pre;
-	word-break: break-all;
-	padding: 5px;
+	resize: none;
+	resize: none;
 }
 
 .selector {
@@ -204,6 +197,7 @@ h1 {
 	position: relative;
 	font-size: 14px;
 	height: 35px;
+	padding: 5px;
 }
 
 .button {
@@ -213,13 +207,7 @@ h1 {
 	height: 55px;
 	width: 160px;
 	border-radius: 50px;
-	border-style: ridge;
-	border-right-width: 1.5px;
-	border-left-width: 1.5px;
-	border-left-color: #656565;
-	border-bottom: none;
-	border-top: none;
-	border-right-color: #656565;
+	border-style: none;
 	box-shadow: 0em 0.4em 5px rgba(122,122,122,0.5);
     background: linear-gradient(to  left, #9900ff, #3366ff);
 }
@@ -234,11 +222,10 @@ h1 {
 	border-radius: 10px;
 	margin: 0 auto;
 	width: 300px;
+	padding: 5px;
 }
 
 				/*	выключение поля "Зарплата" по чекбоксу	*/
-
-
 input[type=radio] { 		 /* скрываем точки  от radio */
 	visibility: hidden;
 }
@@ -254,7 +241,7 @@ input[type=radio] { 		 /* скрываем точки  от radio */
 .card li {
 	display: block;
 	position: relative;
-	padding: 20px 0px;
+	padding: 5px 0px;
 }
 
 .check {
@@ -272,13 +259,14 @@ label {
 input#one ~ .check { 
 	transform: translate(-50px, -25px); 
 }
+
 input#two ~ .check { 
-	transform: translate(-50px, -83px); 
+	transform: translate(-50px, -53px); 
 	background: linear-gradient(to  left, #9900ff, #3366ff);
 }
 
 /* Radio Input #1 */
-input#one:checked ~ .check { transform: translate(-50px, 33px); }
+input#one:checked ~ .check { transform: translate(-50px, 25px); }
 
 /* Radio Input #2  */
 input#two:checked ~ .check { transform: translate(-50px, -25px); }

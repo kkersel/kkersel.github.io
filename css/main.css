@@ -31,6 +31,24 @@ nav  li  {
 	-webkit-user-select: none;
 }
 
+footer {
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8) ), url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: bottom;
+	width: 100%;
+	height: 475px;
+}
+
+.footerinfo {
+	margin: 0;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
 
 .containerHead {
 	width: 1520px;

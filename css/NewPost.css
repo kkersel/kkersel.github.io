@@ -314,7 +314,7 @@ input#two:checked ~ .check { transform: translate(-50px, -25px); }
 }
 /*Колесико мышки есть для этого)0)0
 	Пока только для хроома*/
-::-webkit-scrollbar {
+.::-webkit-scrollbar {
 width: 0px;
 }
 

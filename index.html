@@ -12,6 +12,8 @@
 			<!--Навигация по сайту-->
 		<div class="containerHead">
 			<nav>
+				
+
 				<ul class="menu">
 					<li>
 						<a href="index.html">Найти практику</a> 
@@ -40,8 +42,11 @@
 				</ul>
 			</nav>
 		</div>
+			<div class="underMenu">
+				<h1 class="title">Find The Future</h1>
+			</div>
 			<!--Заголовок-->
-			<h1 class="title">You're Welcome!<br>Take Your Choose</h1>
+			
 			<!--Панель  поиска-->
 		<div class="containerHead">
 			<form action="" class="search">
@@ -66,6 +71,21 @@
 			</a>
 		</span>
 		</div>
+		
+		<div class="BlockArticle">
+
+		<div class="slides">
+			<label><img class="slide" src="img/Art.jpg"><input id='s1' type=radio /></label>
+		    <label><img class="slide" src="img/Article.jpg"><input id='s2' type=radio /></label>
+		</div>
+
+		<div class="labels">
+			  <label for="s1"><img src="img/Art.jpg" class='label'></label>
+			  <label for="s2"><img src="img/Article.jpg" class='label'></label>
+		 </div>
+
+		</div>
+
 	</section>
 
 	<footer>
@@ -73,6 +93,17 @@
 			<p class="footertext">Россия, Москва 2019</p>
 		</div>
 	</footer>
-	
+
+<script type="text/javascript">
+
+	var idArray = ["s1", "s2"];
+var i = 0;
+setInterval(function(){
+  document.getElementById(idArray[i]).click();
+  i = (i+1)%idArray.length;
+}, 10000);
+
+</script>>
+
 </body>
 </html>

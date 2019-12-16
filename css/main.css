@@ -22,6 +22,10 @@ header {
 	height: 480px;
 }
 
+section {
+	height: 760px;
+}
+
 nav {
 	display: flex;
 }
@@ -109,13 +113,27 @@ footer {
 	margin-top: 19px;
 }
 
+/*	Логотип сайта	*/
+
+
+.logotiptext {
+	font-size: 30px;
+	font-family: Alegreya Sans, bold;
+	font-weight: 900;
+	display: flex;	
+	align-content: center;
+	justify-content: center;
+	color: #fff;
+}
+
 .title {	/*блоки на страницах "контакты" и "Практики" выровнены по title*/
 	color: #fff;
-	display: block;
-	margin: 0 auto;
-	margin-top: 120px;
-	margin-left: 350px;
-	font-size: 58px;
+	font-size: 70px;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	font-family: Alegreya Sans;
 }
 
 .search {
@@ -194,4 +212,41 @@ footer {
 .Text {
 	margin: 0 auto;
 	text-align: center;
+}
+
+.BlockArticle {
+	height: 600px;
+	width: 1280px;
+
+	border-radius: 30px;
+	margin: 0 auto;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.imgArticle {
+	background: linear-gradient( rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.8) ), url(../img/Art.jpg);
+	background-size: 100%;
+	height: 600px;
+	width: 1280px;
+}
+
+.title2 {
+	display: flex;
+	align-content: center;	
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+}
+.Article {
+	display: flex;
+	align-content: center;	
+	align-items: center;
+	justify-content: center;
+	padding: 0px 20px;
+}
+
+.Articletext {
+	font-family: Times New Roman;
+	font-size: 18px;
 }

@@ -29,7 +29,7 @@ footer {
 	background-attachment: fixed;
 	background-position: bottom;
 	width: 100%;
-	height: 475px;
+	height: 200px;
 }
 
 div {
@@ -272,7 +272,7 @@ input[type=radio] { 		 /* скрываем точки  от radio */
 	padding: 5px 0px;
 }
 
-.ome {
+.check {
 	width: 30px; height: 30px;
 	position: absolute;
 	border-radius: 50%;
@@ -284,9 +284,8 @@ label {
 }
 
 /* Reset Анимация radio  button*/
-input#one ~ .one { 
+input#one ~ .check { 
 	transform: translate(-50px, -16px); 
-	background: #CCCCCC;
 }
 
 input#two ~ .check { 
@@ -295,7 +294,7 @@ input#two ~ .check {
 }
 
 /* Radio Input #1 */
-input :checked ~ .one { transform: translate(-50px, 12px); }
+input#one:checked ~ .check { transform: translate(-50px, 12px); }
 
 /* Radio Input #2  */
 input#two:checked ~ .check { transform: translate(-50px, -25px); }

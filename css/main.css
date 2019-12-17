@@ -6,7 +6,6 @@ body {
 	-webkit-user-select: none;  /*	Запрет для  выделение текста для chrome,opera,safari*/
 }
 
-
 div {
 	box-sizing: 
 	border-box;
@@ -19,11 +18,11 @@ header {
 	background-attachment: fixed;
 	background-position: top;
 	width: 100%;
-	height: 480px;
+	height: 350px;
 }
 
 section {
-	height: 800px;
+	height: 700px;
 }
 
 nav {
@@ -42,7 +41,7 @@ footer {
 	background-attachment: fixed;
 	background-position: bottom;
 	width: 100%;
-	height: 475px;
+	height: 200px;
 }
 
 .footerinfo {
@@ -122,7 +121,7 @@ footer {
 	align-content: center;
 	align-items: center;
 	justify-content: center;
-	font-family: Arial, sans-serif;
+	font-family: Arial ;
 }
 
 .search {
@@ -179,12 +178,12 @@ footer {
 	border-bottom-left-radius: 75px;
 	-webkit-user-select: none;
 }
-
+	/*Панель с Иконками*/
 .centralMenu {
 	display: flex;
 	margin: 0 auto;
 }
-
+	/*Панель с Иконками*/
 .link {
 	margin: 0 45px;
 	text-decoration: none;
@@ -192,7 +191,7 @@ footer {
 	font-size: 14px;
 	color: #000;
 }
-
+	
 .Icons {
 	height: 70px;
 	margin-top: 12px;
@@ -204,7 +203,8 @@ footer {
 }
 
 .BlockSlide {
-	margin-top: 100px;
+	margin: auto;
+	margin-top: 40px;
 }
 
 /*.mySlides {display: none}
@@ -215,9 +215,9 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .Blockforslide {
   max-width: 1000px;
-  position: relative;
-  margin: auto;
   border-radius: 30px;
+  margin: auto;
+  position: relative;
 }
 
 .imgstyle {
@@ -252,29 +252,24 @@ img {vertical-align: middle;}
 }
 
 /* Caption text */
-.text {
+.LinktoArticle {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 40px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
+  text-decoration-line: none;
 }
 
-.Articlelink {
-	color: #fff;
-	text-decoration-line: none;
-	font-size: 25px;
-}
-
-/* Number text (1/3 etc) */
+/* Number text (1/2 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
-  padding: 8px 12px;
+  padding: 12px 19px;
   position: absolute;
-  top: 0;
+  top: 10;
 }
 
 /* The dots/bullets/indicators */
@@ -290,7 +285,7 @@ img {vertical-align: middle;}
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background: linear-gradient(to bottom right, #9900ff, #3366ff);
 }
 
 /* Fading animation */

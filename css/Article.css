@@ -1,0 +1,139 @@
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	-webkit-user-select: none;  /*	Запрет для  выделение текста для chrome,opera,safari*/
+}
+
+div {
+	box-sizing: 
+	border-box;
+}
+
+header {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8) ), url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top;
+	width: 100%;
+	height: 480px;
+}
+
+section {
+	height: 800px;
+}
+
+nav {
+	display: flex;
+}
+
+nav  li  {
+	margin-top: 20px;
+	-webkit-user-select: none;
+}
+
+footer {
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8) ), url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: bottom;
+	width: 100%;
+	height: 475px;
+}
+
+.footerinfo {
+	margin: 0;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+
+
+.containerHead {
+	width: 1520px;
+	margin: 0 auto;
+}
+
+.ElementOfLogAndPas{
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
+
+.menu {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	margin-left: 70px;
+}
+
+.menu li { 
+	display: block;
+	margin-right: 20px;
+}
+
+.menu li a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.Reg {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	margin-left: 780px;
+}
+
+.Reg li {
+	display: block;
+	margin-left: 10px;
+}
+
+.Reg li a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.ElementOfLogAndPas {
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
+
+.logo {
+	margin-top: 19px;
+}
+
+/*	Логотип сайта	*/
+
+.title {
+	color: #fff;
+	font-size: 70px;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	font-family: Arial, sans-serif;
+}
+
+.BlockforArticle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 800px;
+	margin: auto;
+}
+
+.Article p {
+	font-size: 17px;
+	font-family: Ariale, sans-serif;
+}

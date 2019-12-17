@@ -42,7 +42,7 @@
 				</ul>
 			</nav>
 		</div>
-			<div class="underMenu">
+			<div>
 				<h1 class="title">Find The Future</h1>
 			</div>
 			<!--Заголовок-->
@@ -72,19 +72,35 @@
 		</span>
 		</div>
 		
-		<div class="BlockArticle">
+		<div class="BlockSlide">
+			<div class="Blockforslide">
 
-		<div class="slides">
-			<label><img class="slide" src="img/Art.jpg"><input id='s1' type=radio /></label>
-		    <label><img class="slide" src="img/Article.jpg"><input id='s2' type=radio /></label>
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 2</div>
+			  <img src="img/Art.jpg" class="imgstyle">
+			  <div class="text">
+			  	<a href="Article.html" class="Articlelink">Что такое производственная практика?</a>
+			  </div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 2</div>
+			  <img src="img/Article.jpg" class="imgstyle">
+			  <div class="text">Caption Two</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			</div>
 		</div>
-
-		<div class="labels">
-			  <label for="s1"><img src="img/Art.jpg" class='label'></label>
-			  <label for="s2"><img src="img/Article.jpg" class='label'></label>
-		 </div>
-
-		</div>
+	
 
 	</section>
 
@@ -94,15 +110,34 @@
 		</div>
 	</footer>
 
-<script type="text/javascript">
+<!-- 	DIV с слайдами для статьи  -->
+<script type="text/javascript"> 
+var slideIndex = 1;
+showSlides(slideIndex);
 
-	var idArray = ["s1", "s2"];
-var i = 0;
-setInterval(function(){
-  document.getElementById(idArray[i]).click();
-  i = (i+1)%idArray.length;
-}, 10000);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
 </script>
 
 </body>

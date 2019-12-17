@@ -23,7 +23,7 @@ header {
 }
 
 section {
-	height: 760px;
+	height: 850px;
 }
 
 nav {
@@ -115,17 +115,6 @@ footer {
 
 /*	Логотип сайта	*/
 
-
-.logotiptext {
-	font-size: 30px;
-	font-family: Alegreya Sans, bold;
-	font-weight: 900;
-	display: flex;	
-	align-content: center;
-	justify-content: center;
-	color: #fff;
-}
-
 .title {	/*блоки на страницах "контакты" и "Практики" выровнены по title*/
 	color: #fff;
 	font-size: 70px;
@@ -133,7 +122,7 @@ footer {
 	align-content: center;
 	align-items: center;
 	justify-content: center;
-	font-family: Alegreya Sans;
+	font-family: Arial, sans-serif;
 }
 
 .search {
@@ -220,7 +209,7 @@ footer {
 
 	border-radius: 30px;
 	margin: 0 auto;
-	margin-top: 20px;
+	margin-top: 35px;
 	overflow: hidden;
 }
 

@@ -173,6 +173,7 @@ footer {
 	height: 115px;
 	width: 1520px;
 	margin: 0 auto;
+	box-shadow: 0em 0.1em 3px rgba(122,122,122,0.5);
 	border-bottom-right-radius: 75px;
 	border-bottom-left-radius: 75px;
 	-webkit-user-select: none;

@@ -252,14 +252,16 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .LinktoArticle {
-  color: #f2f2f2;
-  font-size: 52px;
-  padding: 25px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-  text-decoration-line: none;
+    color: #f2f2f2;
+    font-size: 52px;
+    /* padding: 0px 0px 0px 0px; */
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    text-align: center;
+    text-decoration-line: none;
+    background: #0000005c;
+    border-radius: 0px 0px 32px 32px;
 }
 
 /* Number text (1/2 etc) */

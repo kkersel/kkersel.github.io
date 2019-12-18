@@ -172,7 +172,6 @@ footer {
 	display: flex;
 	height: 115px;
 	width: 1520px;
-	box-shadow: 0em 0.4em 5px rgba(122,122,122,0.5);
 	margin: 0 auto;
 	border-bottom-right-radius: 75px;
 	border-bottom-left-radius: 75px;

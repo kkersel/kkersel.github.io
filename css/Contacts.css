@@ -157,6 +157,11 @@ h1 {
     background: linear-gradient(to  left, #9900ff, #3366ff);
 }
 
+.buttonimg {
+	height: 30px;
+	width: 40px;
+}
+
 .content {
 	margin: 0 auto
 	border: 1px solid red;

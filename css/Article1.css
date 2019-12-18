@@ -12,7 +12,7 @@ div {
 }
 
 header {
-	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8) ), url(../img/bg.jpg);
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8) ), url(../img/Article1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -37,7 +37,7 @@ nav  li  {
 }
 
 footer {
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8) ), url(../img/bg.jpg);
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8) ), url(../img/Article1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -138,4 +138,13 @@ footer {
 	font-family: Roboto;
 	font-weight: 400;
 	line-height: 26px;
+}
+
+.totop  {
+	text-decoration-line: none;
+	color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 0px;
 }

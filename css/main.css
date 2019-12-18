@@ -223,6 +223,8 @@ img {vertical-align: middle;}
 .imgstyle {
 	width: 100%;
 	border-radius: 30px;
+	background: rgba(0,0,0,.5);
+ 	z-index: 2;
 }
 
 /* Next & previous buttons */

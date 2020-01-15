@@ -149,13 +149,17 @@ h1 {
 .button {
 	margin: auto;
 	outline: 0;
-	margin-top: 30px;
+	margin-top: 15px;
 	margin-bottom: 10px;	
 	height: 55px;
 	width: 160px;
 	border-radius: 50px;
 	border-style: none;
-    background: linear-gradient(to  left, #9900ff, #3366ff);
+   	background: linear-gradient(to  left, #9900ff, #3366ff);
+	display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
 }
 
 .buttonimg {

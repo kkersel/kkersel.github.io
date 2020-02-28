@@ -22,7 +22,7 @@ header {
 }
 
 section {
-	height: 700px;
+	height: 1500px;
 }
 
 nav {
@@ -198,8 +198,76 @@ footer {
 }
 
 .Text {
-	margin: 0 auto;
+	margin: auto;
 	text-align: center;
+}
+
+.MainForm {
+	display: flex;
+	width: 1200px;
+	margin: auto;
+	margin-top: 50px;
+	border: 2px solid black;
+	padding: 10px;
+}
+
+.FilterPanel {
+	height: 500px;
+	width: 200px;
+	margin-right: 10px;
+	border: 1px solid green;
+}
+
+.VakanciiPanel {
+	height: 1000px;
+	width: 1000px;
+	padding: 10px;
+	border: 1px solid blue;
+}
+
+.Vak  {
+	padding: 20px;
+}
+.VakHead {	
+	display: flex;
+}
+
+.NameOfVak  {				/*	Название вакансии */
+	flex-basis: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+
+    font-family: Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.PriceOfVak {			/*	Цена вакансии */
+	flex: 0 0 auto;
+    margin-left: 15px;
+}
+
+.bloko-link { 			/*	Стиль ссылки на вакансию */
+    display: inline;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: inherit;
+    background: transparent;
+    box-shadow: none;
+    background-size: 0 0;
+    transition: color .1s,opacity .1s;
+}
+
+.InfoSize { 		/*	Размер шрифта компаний, города и метро*/
+	font-size: 15px;
+	margin-bottom: 10px; 
+}
+
+.DescriptionInfo {
+	text-align: justify;
 }
 
 .BlockSlide {
@@ -297,3 +365,4 @@ img {vertical-align: middle;}
   animation-name: fade;
   animation-duration: 1.5s;
 }
+

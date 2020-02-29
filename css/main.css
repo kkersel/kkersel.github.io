@@ -22,7 +22,7 @@ header {
 }
 
 section {
-	height: 2000px;
+	height: 1700px;
 }
 
 nav {
@@ -207,14 +207,17 @@ footer {
 	width: 1200px;
 	margin: auto;
 	margin-top: 50px;
-	border: 2px solid black;
 	padding: 10px;
 }
 
 .FilterPanel {
 	height: 500px;
 	width: 200px;
-	margin-right: 10px;
+	padding: 10px;
+}
+
+.Filter {
+	padding: 20px;
 	border: 1px solid green;
 }
 
@@ -222,11 +225,12 @@ footer {
 	height: 1000px;
 	width: 1000px;
 	padding: 10px;
-	border: 1px solid blue;
 }
 
 .Vak  {
 	padding: 20px;
+	border: 2px solid gray;
+	margin-bottom: 5px;
 }
 .VakHead {	
 	display: flex;

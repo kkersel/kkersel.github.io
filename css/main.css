@@ -23,6 +23,14 @@ header {
 
 section {
 	height: 1700px;
+	background: #CCCCCC;
+}
+
+.sectionbg {
+	margin: auto;
+	width: 1400px;
+	background: white;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
 }
 
 nav {
@@ -206,19 +214,33 @@ footer {
 	display: flex;
 	width: 1200px;
 	margin: auto;
-	margin-top: 50px;
 	padding: 10px;
+
 }
 
 .FilterPanel {
 	height: 500px;
 	width: 200px;
 	padding: 10px;
+	border: 1px solid blue;
 }
 
 .Filter {
-	padding: 20px;
+	padding: 20px; 
 	border: 1px solid green;
+}
+
+.selector {
+	width: 120px;
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 2px rgb(204, 204, 204);
+	transition: all .5s ease;
+	font-size: 12px;
+	height: 35px;
+	padding: 2px;
+	outline: none;
 }
 
 .VakanciiPanel {
@@ -277,96 +299,34 @@ footer {
 .BlockSlide {
 	margin: auto;
 	margin-top: 40px;
+	height: 500px;
 }
 
-/*.mySlides {display: none}
-img {vertical-align: middle;}
-не влияет
-*/ 
+.BlockforSlide {
+	display: flex;
+	justify-content: center;
+}
 
-/* Slideshow container */
-.Blockforslide {
-  max-width: 1000px;
-  border-radius: 30px;
-  margin: auto;
-  position: relative;
+.text {
+    font-size: 16px;
+    text-align: center;
+    text-decoration-line: none;
 }
 
 .imgstyle {
-	width: 100%;
-	border-radius: 30px;
+	max-width: 500px;
+	max-height: 500px;
+	border-radius: 20px;
+	padding: 10px;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 12px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 80px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+.titleArticle {
+	margin: auto;
+	height: 50px;
+	background: #CCCC;
+	text-align: center;
+	font-size: 24px;
+	font-family: Arial, sans-serif;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.LinktoArticle {
-    color: #f2f2f2;
-    font-size: 52px;
-    /* padding: 0px 0px 0px 0px; */
-    position: absolute;
-    bottom: 3px;
-    width: 100%;
-    text-align: center;
-    text-decoration-line: none;
-    background: #0000005c;
-    border-radius: 0px 0px 32px 32px;
-}
-
-/* Number text (1/2 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 12px 19px;
-  position: absolute;
-  top: 10;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background: linear-gradient(to bottom right, #9900ff, #3366ff);
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
 

@@ -10,6 +10,8 @@
 } 
 
 body {
+	height: 100%;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	font-family: Arial, sans-serif;
@@ -20,10 +22,6 @@ header {
 	height: 300px;
 }
 
-section {
-	height: 300px;
-	margin: 0 auto;
-}
 
 footer {
 	width: 100%;

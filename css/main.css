@@ -251,9 +251,11 @@ footer {
 
 .Vak  {
 	padding: 20px;
-	border: 2px solid gray;
+	border-radius: 20px;
+	border: 2px solid #FF9933;
 	margin-bottom: 5px;
 }
+
 .VakHead {	
 	display: flex;
 }
@@ -297,36 +299,53 @@ footer {
 }
 
 .BlockSlide {
+	display: flex;
 	margin: auto;
-	margin-top: 40px;
 	height: 500px;
+	align-items: center;
 }
 
 .BlockforSlide {
 	display: flex;
-	justify-content: center;
+	margin: auto;
 }
 
-.text {
+.text {									/*	текст  под картинками  для статей*/
     font-size: 16px;
     text-align: center;
     text-decoration-line: none;
 }
 
-.imgstyle {
-	max-width: 500px;
+.imgstyle {					/*	картинки для  статей	*/
+	max-width: 600px;
 	max-height: 500px;
 	border-radius: 20px;
 	padding: 10px;
 }
 
-.titleArticle {
-	margin: auto;
-	height: 50px;
-	background: #CCCC;
-	text-align: center;
-	font-size: 24px;
-	font-family: Arial, sans-serif;
+.titleforArticle {
+	height: 65px;
+	background: #CCCCCC;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center }
 }
 
+.titleforArticle h1 {
+	margin: 0;
+}
 
+.titleArticle {
+	color: #FFFF;
+	font-size: 32px;
+	font-family: Arial;
+	font-style: ;
+}
+
+.text {
+	color: #000;
+}
+
+.text:visited {
+	color: #000;
+}

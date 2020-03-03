@@ -259,6 +259,53 @@ footer {
 	display: flex;
 }
 
+.VakFooter  {
+	display: flex;
+	align-items: center;
+	padding-top: 10px;
+}
+
+.ButtonOtklik {
+	background: linear-gradient(to bottom right, #9900ff, #3366ff);
+	color: #fff;
+	border: none;
+	border-radius: 100%;
+	height: 40px;
+  	width: 50px;
+ 	cursor: pointer;
+  	font-size: 14px;
+  	outline: 0;
+  	-webkit-user-select: none;
+    transition: all 0s;
+    content: none;
+    transition-duration: 0.1s;
+}
+
+.ButtonOtklik:hover {
+	background: linear-gradient(to bottom right, #2323ff, #1236ff);
+	color: #fff;
+	border: none;
+	border-radius: 30px;
+	height: 40px;
+	text-decoration: none;
+	text-align: center;
+  	width: 120px;
+ 	cursor: pointer;
+  	font-size: 14px;
+  	outline: 0;
+  	-webkit-user-select: none;
+  	transition: all 0.3s;	
+}
+
+.DataVak {
+	flex-basis: 100%;
+    width: 100%;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
 .NameOfVak  {				/*	Название вакансии */
 	flex-basis: 100%;
     width: 100%;

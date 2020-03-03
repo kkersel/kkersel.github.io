@@ -22,7 +22,7 @@ header {
 }
 
 section {
-	height: 1700px;
+	height: 1800px;
 	background: #CCCCCC;
 }
 
@@ -212,7 +212,7 @@ footer {
 
 .MainForm {
 	display: flex;
-	width: 1200px;
+	width: 1300px;
 	margin: auto;
 	padding: 10px;
 
@@ -226,7 +226,6 @@ footer {
 
 .Filter {
 	padding: 20px; 
-	border: 1px solid green;
 }
 
 .selector {
@@ -249,10 +248,10 @@ footer {
 }
 
 .Vak  {
-	padding: 20px;
+	padding: 25px;
 	border-radius: 20px;
-	border: 2px solid #FF9933;
-	margin-bottom: 5px;
+	border: 1px solid #6666FF;
+	margin-bottom: 15px;
 }
 
 .VakHead {	
@@ -293,8 +292,6 @@ footer {
   	-webkit-user-select: none;
     transition: all 0.5s;
 }
-
-
 
 .DataVak {
 	flex-basis: 100%;

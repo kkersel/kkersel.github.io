@@ -13,7 +13,8 @@ header {
 	background-attachment: fixed;
 	background-position: top;
 	width: 100%;
-	height: 480px;
+	height: 350px;
+	border-bottom: 5px  solid #FF9966;
 }
 
 section {
